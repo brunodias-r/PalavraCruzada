@@ -1,0 +1,149 @@
+body {
+  background-color: #92cf52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cima {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.observacoes {
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  border-radius: 20px;
+  border-color: 0;
+  background-color: white;
+  width: 40%;
+}
+
+#esq-principal-dir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#img-esquerda {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#img-direita {
+  display: flex;
+  align-items: unset;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#crossword {
+  width: 420px;
+  height: 450px;
+  background-color: #92cf52;
+  display: flex;
+  justify-content: center;
+}
+
+#img-baixo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 50%;
+  justify-content: space-evenly;
+}
+
+.botao {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  border: black;
+  text-align: center;
+}
+
+.botao :hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  border-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-color: hsl(0, 0%, 0%);
+  font-weight: bolder;
+  text-transform: uppercase;
+  float: left;
+}
+
+#form1 {
+  margin-left: -60px;
+  margin-top: 240px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+#form2 {
+  margin-left: -270px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+#form3 {
+  margin-left: -150px;
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+#form4 {
+  margin-left: 210px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+#form5 {
+  margin-left: 150px;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+#form6 {
+  margin-left: 390px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+/* #dix{
+    justify-content: center;
+    align-items: center;
+} */

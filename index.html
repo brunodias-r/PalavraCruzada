@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="./javascript/index.js"></script>
+    <title>CrossWord</title>
+  </head>
+
+  <body>
+    <div class="container row" id="esq-principal-dir">
+  
+      <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10 col-12" id="img-esquerda">
+        <img class="" src="./images/1.jpg" alt="">
+        <img class="" src="./images/3.jpg" alt="">
+        <img src="./images/2.jpg" alt="">
+      </div>
+
+      <div id="principal" >
+        <div class="cima">
+          <p class="col-6" style="font-weight:bolder; font-size:large; text-align: center;">Palavras cruzadas Design Gráfico</p>
+          <button class="col-6 observacoes" title="Observações e regras." onclick="alerta()">OBSERVAÇÕES</button>
+        </div>
+        <div id="crossword">
+          <div id="form1">
+            <button class="botao">1</button>
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case16" name="case16" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case17" name="case17" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case18" name="case18" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case19" name="case19" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case20" name="case20" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="2" placeholder="/" title="DOIS DÍGITOS" id="case21" name="case21" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case22" name="case22" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case23" name="case23" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case24" name="case24" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case25" name="case25" />
+            <input type="text" oninput="primeiraPalavra()" class="required1" maxlength="1" id="case26" name="case26" />
+          </div>
+
+          <div id="form2">
+            <button class="botao" >2</button>
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case1" name="case1" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case2" name="case2" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case3" name="case3" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case4" name="case4" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case5" name="case5" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case6" name="case6" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case7" name="case7" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case8" name="case8" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case9" name="case9" />
+            <input type="text" oninput="segundaPalavra()" class="required2" maxlength="1" id="case10" name="case10" />
+          </div>
+          
+          <div id="form3" >
+            <button class="botao" >3</button>
+            <input type="text" oninput="terceiraPalavra()" class="required3" maxlength="1" id="case11" name="case11" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case12" name="case12" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case13" name="case13" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case14" name="case14" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case15" name="case15" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case27" name="case27" />
+            <input type="text" oninput="terceiraPalavra()" class="required3"  maxlength="1" id="case28" name="case28" />
+          </div>
+
+          <div id="form4" >
+            <button type="submit" class="botao" >4</button>
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case29" name="case29" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case30" name="case30" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case31" name="case31" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case32" name="case32" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case33" name="case33" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case34" name="case34" />
+            <input type="text" oninput="quartaPalavra()" class="required4" maxlength="1" id="case35" name="case35" />
+          </div>
+
+          <div id="form5" oninput="quintaPalavra()" >
+            <button class="botao" >5</button>
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case36" name="case36" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case37" name="case37" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case38" name="case38" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case39" name="case39" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case40" name="case40" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case41" name="case41" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case42" name="case42" />
+            <input type="text" oninput="quintaPalavra()" class="required5" maxlength="1" id="case43" name="case43" />
+          </div>
+
+          <div id="form6">
+            <button type="submit" class="botao" >6</button>
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case45" name="case45" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case46" name="case46" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case47" name="case47" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case48" name="case48" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case49" name="case49" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case50" name="case50" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case51" name="case51" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case52" name="case52" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case53" name="case53" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case54" name="case54" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case55" name="case55" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case56" name="case56" />
+            <input type="text" oninput="sextaPalavra()" class="required6" maxlength="1" id="case57" name="case57" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10 col-12" id="img-esquerda">
+        <img class="" src="./images/5.jpg" alt="">
+        <img class="" src="./images/6.jpg" alt="">
+        <img src="./images/4.jpg" alt="">
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
